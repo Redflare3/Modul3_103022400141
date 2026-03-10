@@ -42,6 +42,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Celsius", "Fahrenheit", "Kelvin", "Reamur" });
             comboBox1.Location = new Point(84, 127);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
@@ -79,17 +80,19 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(269, 194);
+            textBox1.Location = new Point(269, 128);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 4;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(269, 128);
+            textBox2.Location = new Point(269, 195);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 5;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // button1
             // 
@@ -99,6 +102,7 @@
             button1.TabIndex = 6;
             button1.Text = "Convert";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label4
             // 
@@ -112,10 +116,12 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Celsius", "Fahrenheit", "Kelvin", "Reamur" });
             comboBox2.Location = new Point(84, 194);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
             comboBox2.TabIndex = 8;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // Form1
             // 
